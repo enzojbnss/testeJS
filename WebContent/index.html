@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+$.ajax({
+	method : 'PUT',
+	url : "http://www.enzojbnss.esy.es/teste/",
+	xhrFields : {
+		withCredentials : true
+	},
+	data : {"nome" : "Antonio"}
+}).success(function(retorno) {
+	alert(retorno);
+}).error(function(retorno) {
+	alert("erro");
+});
+</script>
+<body>
+
+</body>
+</html>
